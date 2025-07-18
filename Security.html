@@ -1,28 +1,34 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
+<head>
+    <title>Login page</title>
+
+
+<link rel="stylesheet" href="/stylesheets/style2.css">
+
+    
+</head>
 <body>
-
-<p>Click the button to display the id of the form the password field belongs to.</p>
-
-<form id="myForm">
-Password: <input type="password" id="myPsw">
+<form>
+  
+    <label for="pswd"><h2 style="background-color:rgb(153, 153, 153);">Enter code. </h1> </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
+<!--Function to check password the already set password is admin-->
+      <script type="text/javascript">
+          function checkPswd() {
+              var confirmPassword = "TIMMY";
+              var password = document.getElementById("pswd").value;
+              if (password == confirmPassword) {
+                  window.location="footage.html";
+              }
+              else{
+                  alert("ALERTING NEARBY POLICE OF INTRUSION PLEASE DO NOT MOVE.");
+              }
+          }
+      </script>
 
-<button onclick="myFunction()">Try it</button>
-
-<p id="Penis">
-
-
-<a href="./Footage.html">Contact</a>
-
-</p>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myPsw").form.id;
-  document.getElementById("Penis").innerHTML = x;
-}
-</script>
-
+  <h2 style="background-color:rgb(36, 218, 0);">Make sure you click the submit button rather than enter so we don't have another sherrif "problem". </h1>
 </body>
 </html>
